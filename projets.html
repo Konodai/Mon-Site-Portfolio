@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Portfolio MMI</title>
+    <style>
+        /* --- STYLE GENERAL --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* --- HEADER (BANNIÈRE) --- */
+        header {
+            background-color: #2c3e50;
+            padding: 30px 20px; /* J'ai augmenté un peu le padding pour qu'elle soit plus belle */
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; /* Taille fixe pour ton titre principal */
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #d35400;
+        }
+
+        /* --- CONTENU --- */
+        .contenu {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style des paragraphes de présentation */
+        .description-projet {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #eeeeee;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Style des titres de sections et légendes */
+        .legende-titre {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #2c3e50;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* Style pour les images pour qu'elles ne dépassent pas sur mobile */
+        img, video {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+        figure {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mon Portfolio pour le BUT MMI</h1>
+        <nav>
+            <a href="index.html" class="btn">Accueil</a>
+            <a href="projets.html" class="btn">Mes Projets</a>
+            <a href="moncv.html" class="btn">Mon CV</a>
+        </nav>
+    </header>
+
+    <div class="contenu">
+        
+        <div class="description-projet">
+            <p><strong>Le mapping réalisé pour l'exposition :</strong><br>
+            Nous étions plusieurs anciens élèves sur le mapping. Je me suis occupé des statues dans le hall du musée via le logiciel Millumin 4.</p>
+        </div>
+
+        <img src="Images/ordi.jpg" width="307" alt="Ordinateur">
+        <img src="Images/dame.jpg" width="307" alt="Statue dame">
+        <img src="Images/cheval%20rouge.jpg" width="545" alt="Cheval rouge">
+        
+        <br>
+        
+        <video width="213" controls>
+            <source src="Images/status.mp4" type="video/mp4">
+        </video>
+        <video width="672" controls>
+            <source src="Images/cheval%20feu.mp4" type="video/mp4">
+        </video>
+
+        <hr style="width:50%; margin: 40px auto; border: 0; border-top: 1px solid #ccc;">
+
+        <figure>
+            <figcaption class="legende-titre">Voici un dessous de table réalisé en pyrogravure</figcaption>
+            <img src="Images2/dessous%20de%20table.jpg" width="300" alt="Pyrogravure">
+        </figure>
+
+        <figure>
+            <figcaption class="legende-titre">Quelques exemples de dessins réalisés</figcaption>
+            <img src="Images2/link%20mouchoir.jpg" width="250">
+            <img src="Images2/naruto.jpg" width="250">
+            <img src="Images2/shoto.jpg" width="250">
+            <img src="Images2/kacchan.jpg" width="250">
+            </figure>
+
+        <figure>
+            <figcaption class="legende-titre">Montages vidéo sur CapCut (Attention flash sur la vidéo de droite)</figcaption>
+            <video width="213" controls>
+                <source src="Images2/tomodachi%20game.mp4" type="video/mp4">
+            </video>
+            <video width="311" controls>
+                <source src="Images2/hells%20paradise.mp4" type="video/mp4">
+            </video>
+        </figure>
+
+    </div>
+</body>
+</html>
